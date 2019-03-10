@@ -3,7 +3,7 @@
 #First render is a random agent, performing 200 random micromovements 
 #The agent is then trained without a render
 #Second render is a the trained agent
-#Video demonstration: 
+#Video demonstration: https://youtu.be/qdH80Kn02gk
 
 import gym
 import numpy as np
