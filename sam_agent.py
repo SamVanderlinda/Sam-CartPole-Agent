@@ -1,9 +1,5 @@
-#A game to balance a pole as long as possible
-#This code illustrates simple machine learning before and after training 
-#First render is a random agent, performing 200 random micromovements 
-#The agent is then trained without a render
-#Second render is a the trained agent
-#Video demonstration: https://youtu.be/mdMFop6XwqA
+#Cart the uses BASIC machine learning to hold pole
+#vetically as long as possible
 
 import gym
 import numpy as np
@@ -56,6 +52,7 @@ def training_running():
             bestLength = average_length
             best_weights = new_weights
         episode_lengths.append(average_length)
+        #Every 10 episodes of trainging report the best best length
         if i % 10 == 0:
             print('best length is ', bestLength)
     done = False
